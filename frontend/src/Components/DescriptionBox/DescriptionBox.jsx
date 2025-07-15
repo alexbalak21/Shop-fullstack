@@ -1,29 +1,53 @@
-import React from 'react'
-import './DescriptionBox.css'
+import React from 'react';
+import './DescriptionBox.css';
 
-const DescriptionBox = () => {
+const DescriptionBox = ({ product }) => {
+  if (!product) return null;
+
   return (
     <div className='descriptionbox'>
-        <div className="descriptionbox-navigator">
-            <div className="descriptionbox-nav-box">Description</div>
-            <div className="descriptionbox-nav-box fade">Reviews (122)</div>
+      <div className="descriptionbox-navigator">
+        <div className="descriptionbox-nav-box">Description</div>
+        <div className="descriptionbox-nav-box fade">Reviews ({product.reviews || 0})</div>
+      </div>
+      <div className="descriptionbox-description">
+        <p>{product.description}</p>
+        
+        {product.details && product.details.length > 0 && (
+          <div className="product-details">
+            <h3>Product Details</h3>
+            <ul>
+              {product.details.map((detail, index) => (
+                <li key={index}>{detail}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+        
+        {product.colors && product.colors.length > 0 && (
+          <div className="product-colors">
+            <h3>Available Colors</h3>
+            <div className="color-options">
+              {product.colors.map((color, index) => (
+                <span 
+                  key={index} 
+                  className="color-option"
+                  style={{ backgroundColor: color.toLowerCase() }}
+                  title={color}
+                ></span>
+              ))}
+            </div>
+          </div>
+        )}
+        
+        <div className="stock-status">
+          <strong>Availability:</strong> {product.stock > 0 
+            ? `In Stock (${product.stock} available)` 
+            : 'Out of Stock'}
         </div>
-        <div className="descriptionbox-description">
-            <p>
-                An e-commerce website is an online platform that facilitates the buying and selling 
-                of products or services over the internet. It serves as a marketplace where businesses and 
-                individuals can showcase their products, interact with 
-                customers, and conduct transaction without the need for a physical presence. 
-                E-commerce website have gained immense popularity due to their conveniece,accessibility and the global reach they offer.
-            </p>
-            <p>
-                E-commerce websites typically display products or services along with detailed descriptions,
-                images,prices, and any available variations(e.g: sizes, colors).Each product usually has its 
-                own dedicated page with relavant information.
-            </p>
-        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default DescriptionBox
+export default DescriptionBox;

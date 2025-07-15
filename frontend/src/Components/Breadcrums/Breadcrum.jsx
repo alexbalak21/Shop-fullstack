@@ -1,14 +1,27 @@
-import React from 'react'
-import './Breadcrum.css'
-import arrow_icon from '../Assets/breadcrum_arrow.png'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Breadcrum.css';
 
-const Breadcrum = (props) => {
-    const {product} = props;
+const Breadcrum = ({ product }) => {
+  if (!product) return null;
+
+  // Format category name for display
+  const formatCategory = (category) => {
+    if (!category) return '';
+    return category.charAt(0).toUpperCase() + category.slice(1);
+  };
+
   return (
     <div className='breadcrum'>
-        HOME <img src={arrow_icon} alt='' /> SHOP <img src={arrow_icon} alt='' /> {product.category} <img src={arrow_icon} alt='' /> {product.name} 
-    </div >
-  )
-}
+      <Link to='/'>HOME</Link> 
+      <img src='/images/arrow.png' alt='arrow' /> 
+      <Link to={`/${product.category === 'kid' ? 'kids' : product.category + 's'}`}>
+        {formatCategory(product.category)}
+      </Link> 
+      <img src='/images/arrow.png' alt='arrow' /> 
+      <span>{product.name}</span>
+    </div>
+  );
+};
 
-export default Breadcrum
+export default Breadcrum;
