@@ -1,0 +1,117 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Premium Cotton T-Shirt",
+      "new_price": 29.99,
+      "old_price": 39.99,
+      "description": "Our premium cotton t-shirt is made from 100% organic cotton, ensuring maximum comfort and durability. Perfect for casual outings or layering under jackets.",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      ],
+      "category": "men",
+      "rating": 4.5,
+      "reviews": 128,
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "colors": ["White", "Black", "Navy", "Gray"],
+      "details": [
+        "100% Organic Cotton",
+        "Pre-shrunk fabric",
+        "Relaxed fit",
+        "Ribbed crew neck",
+        "Double-stitched seams"
+      ],
+      "stock": 100,
+      "tags": ["casual", "basic", "cotton", "tshirt"]
+    },
+    {
+      "id": 2,
+      "name": "Slim Fit Jeans",
+      "new_price": 59.99,
+      "old_price": 79.99,
+      "description": "Classic slim fit jeans made with premium denim. Features a comfortable stretch fabric that moves with you throughout the day.",
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1542272605-83e1fca3de1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      ],
+      "category": "men",
+      "rating": 4.7,
+      "reviews": 215,
+      "sizes": ["28", "30", "32", "34", "36"],
+      "colors": ["Blue", "Black", "Light Blue"],
+      "details": [
+        "98% Cotton, 2% Elastane",
+        "Slim fit",
+        "Mid-rise",
+        "Five-pocket style",
+        "Button and zip fly"
+      ],
+      "stock": 75,
+      "tags": ["denim", "pants", "slim fit", "casual"]
+    },
+    {
+      "id": 3,
+      "name": "Elegant Summer Dress",
+      "new_price": 49.99,
+      "old_price": 69.99,
+      "description": "Flowy and feminine summer dress perfect for any occasion. The lightweight fabric keeps you cool while the flattering silhouette enhances your figure.",
+      "image": "https://images.unsplash.com/photo-1572804013427-4d7ca7268217?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1572804013427-4d7ca7268217?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1572804013309-2815b5b7d4e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      ],
+      "category": "women",
+      "rating": 4.9,
+      "reviews": 342,
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "colors": ["Floral", "Blue", "Pink", "White"],
+      "details": [
+        "100% Viscose",
+        "Knee length",
+        "Wrap style",
+        "Tie waist",
+        "Machine washable"
+      ],
+      "stock": 50,
+      "tags": ["dress", "summer", "floral", "casual"]
+    },
+    {
+      "id": 4,
+      "name": "Kids Graphic T-Shirt",
+      "new_price": 14.99,
+      "old_price": 24.99,
+      "description": "Fun and comfortable t-shirt for kids featuring a cute graphic print. Made with soft, breathable cotton that's gentle on sensitive skin.",
+      "image": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      ],
+      "category": "kid",
+      "rating": 4.6,
+      "reviews": 87,
+      "sizes": ["2T", "3T", "4T", "5/6", "7/8"],
+      "colors": ["Red", "Blue", "Green", "Yellow"],
+      "details": [
+        "100% Cotton",
+        "Reinforced collar",
+        "Screen-printed design",
+        "Tagless label",
+        "Machine washable"
+      ],
+      "stock": 120,
+      "tags": ["kids", "tshirt", "casual", "graphic"]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Test User",
+      "email": "test@example.com",
+      "password": "password123",
+      "cart": []
+    }
+  ]
+}

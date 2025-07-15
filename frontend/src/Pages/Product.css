@@ -1,0 +1,41 @@
+/* Product Page Styling */
+.product-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-loading,
+.product-error,
+.product-not-found {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.product-loading {
+  color: #666;
+}
+
+.product-error {
+  color: #d32f2f;
+}
+
+.product-not-found {
+  color: #ff9800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-page {
+    padding: 10px;
+  }
+  
+  .product-loading,
+  .product-error,
+  .product-not-found {
+    padding: 20px 10px;
+    font-size: 1rem;
+  }
+}
